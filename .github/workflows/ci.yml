@@ -1,21 +1,9 @@
 name: CI
 
 on:
-  workflow_dispatch:
-      branches:
-    - master
-    paths:
-     - '.github/**'
-     - 'src/**'
-     - build.cake
-     - CodeCoverage.runsettings
-     - dotnet-tools.json
-     - global.json
-     - Key.snk
-     - Paseto.sln
   # Trigger the workflow on push or pull request,
   # but only for the master branch
-  push:
+  workflow_dispatch:
     branches:
     - master
     paths:
