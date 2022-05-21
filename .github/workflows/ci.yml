@@ -67,7 +67,7 @@ jobs:
     - name: 'Run Unit Tests'
       run: dotnet cake --target=Test
     - name: 'Dir output'
-      run: dir tests    
+      run: dir tests\Paseto.Tests\bin\Release\net6.0
     - name: 'Run Unit Tests'
       run: dotnet test -f net6.0 --no-restore --logger trx -r ${{env.BUILD_ARTIFACT_PATH}} --settings "CodeCoverage.runsettings"
       if: ${{ false }} # always skip since coverage is somehow always empty in GitHub Actions
