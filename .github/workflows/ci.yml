@@ -64,8 +64,8 @@ jobs:
       run: dotnet tool restore
     - name: 'Build Project'
       run: dotnet cake --target=Build
-#    - name: 'Run Unit Tests'
-#      run: dotnet cake --target=Test
+    - name: 'Run Unit Tests'
+      run: dotnet cake --target=Test
 #    - name: 'Dir output'
 #      run: dir tests\Paseto.Tests\bin\Release\net6.0
 #    - name: 'Run Unit Tests'
